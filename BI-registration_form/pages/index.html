@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="https://th.bing.com/th/id/OIP.kwE8IapDUTtylieeRnn2YAHaHa?pid=ImgDet&rs=1" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <title>Registration Form</title>
+
+    <style>
+        /* Global Styles */
+        body {
+            background: url('./img/im.png') no-repeat center center/cover;
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            position: relative;
+            color: white;
+        }
+        /* Background Design */
+        .background-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://th.bing.com/th/id/OIP.kwE8IapDUTtylieeRnn2YAHaHa?pid=ImgDet&rs=1') no-repeat center center/cover;
+            opacity: 0.2;
+        }
+
+        .background-gradient {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(4, 28, 44, 0.8), rgba(75, 0, 130, 0.8));
+        }
+
+        /* Bubble Animation */
+        .bubble {
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            animation: float 4s infinite;
+        }
+
+        #
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-30px); }
+        }
+
+        /* Card Styles */
+        .card {
+            padding: 2rem;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            z-index: 1;
+        }
+
+        .card h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-label {
+            font-size: 1.25rem;
+        }
+
+        .form-control {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .btn-primary {
+            background-color: #8A2BE2;
+            border-color: #8A2BE2;
+            color: #FFFFFF;
+            font-size: 1.25rem;
+            padding: 0.75rem 1.5rem;
+        }
+
+        .btn-primary:hover {
+            background-color: #800080;
+            border-color: #800080;
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Background Overlays -->
+    <div class="background-overlay"></div>
+    <div class="background-gradient"></div>
+
+    <!-- Bubble Decorations -->
+    <div class="bubble bubble1"></div>
+    <div class="bubble bubble2"></div>
+    <div class="bubble bubble3"></div>
+    <div class="bubble bubble4"></div>
+    <div class="bubble bubble5"></div>
+
+    <!-- Registration Form Section -->
+    <section class="text-center">
+        <div id="card" class="card shadow-5-strong">
+            <div class="card-body px-md-5 align-left">
+
+                <!-- Form Title -->
+                <h2 class="fw-bold mb-5">Registration Form</h2>
+
+                <!-- Registration Form -->
+                <form method="post" action="/register" style="text-align: left">
+                    <!-- Name Input -->
+                    <div class="form-outline mb-4">
+                        <label class="form-label" for="form3Example1">Name</label>
+                        <input type="text" id="form3Example1" name="name" class="form-control" placeholder="Enter your name" required aria-label="Name" />
+                    </div>
+
+                    <!-- Email Input -->
+                    <div class="form-outline mb-4">
+                        <label class="form-label" for="form3Example3">Email address</label>
+                        <input type="email" id="form3Example3" name="email" class="form-control" placeholder="Enter your email" required aria-label="Email address" />
+                    </div>
+
+                    <!-- Password Input -->
+                    <div class="form-outline mb-4">
+                        <label class="form-label" for="form3Example4">Password</label>
+                        <input type="password" id="form3Example4" name="password" class="form-control" placeholder="Enter your password" required aria-label="Password" />
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-primary btn-block mb-4">Register</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+</body>
+
+</html>
